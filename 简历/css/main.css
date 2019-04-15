@@ -1,0 +1,745 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?ruda9z');
+    src:  url('../fonts/icomoon.eot?ruda9z#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?ruda9z') format('truetype'),
+      url('../fonts/icomoon.woff?ruda9z') format('woff'),
+      url('../fonts/icomoon.svg?ruda9z#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  i{
+    font-family: icomoon;
+    
+    font-style: normal;
+   
+  }
+
+ 
+*{
+    padding: 0;
+    margin: 0;
+}
+.fl{
+ float: left;
+}
+.fr{
+    float: right;
+}
+#fp-nav{
+    position: fixed;
+    z-index: 100;
+    margin-top: -32px;
+    top: 50%;
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+}
+#fp-nav.right{
+    right: 17px;
+    background: #44c7f4;
+    border-radius: 15px;
+    padding: 0;
+    width: 25px;
+}
+#fp-nav li{
+    display: block;
+    width: 8px;
+    height: 13px;
+    margin: 9px;
+    position: relative;
+}
+#fp-nav li a{
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+#fp-nav ul li a span {
+    /* border-radius: 50%; */
+    position: absolute;
+    z-index: 1;
+    height: 4px;
+    width: 4px;
+    border: 0;
+    background: #fff;
+    left: 50%;
+    top: 50%;
+    margin: -2px 0 0 -2px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    transform: rotate(135deg);
+    -webkit-transform: : rotate(135deg);
+    -moz-transform: : rotate(135deg);
+    -o-transform: : rotate(135deg);
+}
+
+#fp-nav ul li a.active span, #fp-nav ul li:hover a span{
+    height: 10px;
+    width: 10px;
+    margin: -6px 0 0 -6px;
+    background: #d65cb0;
+}
+#fp-nav ul li .tool {
+    position: absolute;
+    top: -2px;
+    color: #fff;
+    font-size: 14px;
+    white-space: nowrap;
+    max-width: 220px;
+    overflow: hidden;
+    display: block;
+    opacity: 0;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    border-radius: 13px 0px 13px;
+    background: #d65cb0;
+    padding: 1px 10px;
+    border-color: #d65cb0;
+    border-style: solid;
+    border-width: 1px;
+    right: 22px;
+}
+#fp-nav ul li:hover .tool{
+    opacity: 1;
+    
+}
+#black{ 
+    width: 100%; 
+    height: 100%;  
+    position: absolute; 
+    top:0; 
+    left: 0;
+    z-index: 999;
+    background: rgba(000,000,000,0.7); 
+    display: none;
+}
+#mypage{
+    overflow: hidden;
+    width: 350px; 
+    height: 406px; 
+    position: absolute; 
+    background: rgb(255,255,255);
+    z-index: 9999;
+    border: 10px solid rgb(167, 163, 163); 
+    top: 150px;
+    left: 40%;
+    display: none;
+}
+#mypage .photo{
+    
+    /* border-radius: 50%; */
+    margin: 20px auto;
+    width: 108px;
+    height: 160px;
+    box-shadow: 2px 2px 5px #f10215;
+    position: relative;
+}
+#mypage .photo::after{
+    top: 170px;
+    content: "";
+    background: #066093;
+    display: block;
+    width: 250px;
+    right: -70px;
+    height: 3px;
+    
+    position: absolute;
+}
+#mypage .photo img{
+    width: 100%;
+}
+#mypage .conway{
+    position: absolute;
+    top: 200px;
+    left: 10%;
+    display: block;
+    width: 100%;
+    height: 200px;
+
+    margin: 20 auto;
+}
+.conway h4 i{
+    font-size: 26px;
+    color: #066093;
+}
+.conway h4{
+   font-size: 16px;
+   margin: 15px 0;
+}
+#home{
+    background: rgb(6, 96, 147);
+}
+.container{
+    height: 500px;
+    overflow: hidden;
+}
+.main{
+    width: 500px;
+   
+    height: 500px;
+}
+.lxfs input{
+
+    float: right;
+    border: 3px solid #0b9bee;
+    border-radius: 30px;
+    width: 180px;
+    height: 40px;
+    background: transparent;
+    margin: 20px 200px;
+    color:rgb(255, 255, 255);
+}
+.leftside{
+    margin-top: 90px;
+    margin-left: 10%; 
+    width: 300px;
+    height: 500px;
+    float: left;
+}
+
+.rightside{
+    margin-top: 200px;
+    margin-left: 170px;
+   float: left;
+  
+}
+.rightside h3{
+    display: inline-block;
+    background: #ffffff;
+    color: #066093;
+    font-weight: 300;
+    padding: 0.3em 0.7em;
+    font-size: 1.5em;
+    position: relative;
+    border-radius: 5px;
+}
+.rightside h3:before {
+    content: '';
+    position: absolute;
+    left: 43%;
+    bottom: -14px;
+    border-left: 0px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 14px solid #FFF;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+}
+.rightside p{
+    color: #fff;
+    font-size: 3em;
+    letter-spacing: 1px;
+    font-weight: 300;
+    margin: 0.2em 0 0.1em;
+}
+.rightside h2{
+    color: #fff;
+    font-size: 1.2em;
+    text-transform: capitalize;
+    font-weight: 300;
+    letter-spacing: 5px;
+}
+.aboutme{
+    margin: 50px 0;
+    text-align: center;
+    position: relative;
+}
+#about{
+    margin: auto;
+}
+#about i{
+    font-size: 26px;
+    margin-top: 16px;
+    color: rgb(155, 149, 149);
+}
+#about h2{
+    color: rgb(71, 67, 67);
+}
+.aboutme span{
+    font-size: 48px;
+    padding: 0px 20px;
+   
+    display: inline-block;
+
+
+}
+
+.aboutme span::after{
+    content: "";
+    background: #066093;
+    display: block;
+    width: 200px;
+    height: 5px;
+    right: 40%;
+    position: absolute;
+}
+.aboutmain{
+    padding: 0 50px;
+    width: 100%;
+    height: 750px;
+}
+.aboutleft{
+    padding: 0px 15px;
+    width: 430px;
+    height: 100%;
+
+    float: left;
+}
+.education{
+   position: relative;
+}
+
+.ed-bt::after,.ed-mainbt::after,.person-bt::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+.education h3{
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #0b9bee;
+    font-weight: 400;
+}
+
+.expertise{
+   position: relative;
+}
+
+.expertise .skill{
+    width: 50%;
+    
+}
+.peosk{
+    font-size: 18px;
+    margin-right: 30px;
+    color: #066093;
+}
+.skill{
+    height: 17px;
+    background: #d65cb0;
+    margin-bottom: 0.7em;
+    -webkit-transition: width 2s;
+    transition: width 2s;
+}
+.skill::after{
+    width: 100%;
+    height: 17px;
+    background: #0670ad;
+    display: block;
+    content: '';
+    position: absolute;
+    z-index: -1;
+}
+
+.aboutspace{
+    width: 5px;
+    height: 100%;
+    margin: 0 50px;
+    background: #dcdcdc;
+    float: left;
+ 
+}
+.aboutright{
+    padding: 0px 15px;
+    width: 55%;
+    margin-right: 50px;
+    height: 100%;
+  
+    float: left;
+}
+table{
+    margin: 10px auto;
+    width: 90%;
+}
+td{
+    text-align: center;
+    height: 40px;
+    font-size: 14px;
+}
+.myprofile{
+    margin: 0 30px;
+    height: 200px;
+    border: 1px solid #333;
+}
+.myproject{
+    margin: 0 30px;
+    height: 200px;
+    border: 1px solid #333;
+}
+#github{
+    padding-top: 50px;
+    background: pink;
+}
+.git-bt{
+   margin-bottom: 50px;
+    text-align: center;
+    position: relative;
+}
+.git-pro span{
+    font-size: 48px;
+    padding: 0px 20px;
+   color: white;
+    display: inline-block;
+
+
+}
+.git-pro span::after{
+    content: "";
+    background: #066093;
+    display: block;
+    width: 300px;
+    height: 5px;
+    right: 30%;
+    position: absolute;
+}
+.gitmain{
+    height: 100%;
+}
+
+
+#box {
+    width: 100%;
+    
+    margin: 10px auto;
+}
+
+#tab {
+    width: 100%;
+    display: block;
+   
+    
+}
+#tab ul{
+    
+    margin: 10px 240px;
+    height: 50px;
+    text-align: center;
+}
+#tab li {
+    float: left;
+    list-style: none;
+    width: 130px;
+    margin: 0 80px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+#tab li:hover{
+   background: #0b9bee;
+}
+
+#tab li.sec {
+    background:#0b9bee; color: white;
+}
+
+#tab i a{
+   font-size: 30px;
+   text-decoration: none;
+}
+#tab .git-ic{
+    position: relative;
+}
+#tab .git-ic span{
+    width: 200px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 16px;
+    color: rgb(8, 90, 212,0.3);
+   opacity: 0;
+}
+#tab .git-ic:hover span{
+    opacity: 1;
+    transition: all 3s ease;
+}
+
+
+#text {
+    width: 100%;
+    height: 550px;
+    
+  
+}
+
+#text>div {
+    display: none;
+   
+}
+
+#text>div.cur {
+    display: block;
+}
+
+.main{
+    list-style: none;
+    margin-left: 10px;
+}
+h1{
+    text-align: center;
+}
+.git-line{
+    padding-left: 10%;
+
+    width: 85%;
+    margin: auto;
+}
+.git-line::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.con {
+    width: 300px;
+    height: 140px;
+    float: left;
+    margin:10px 20px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px black;
+    /* cursor: pointer; */
+}
+
+.con img {
+    width: 100%;
+    height: 100%;
+}
+
+.con span {
+    display: block;
+    background: rgba(33, 33, 33, 0.8);
+    position: absolute;
+    color: #ccc;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: all 0.5s ease;
+    text-align: center;
+}
+
+.con span {
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    top: 0;
+    padding: 40px 20px;
+}
+
+.con a {
+    font-size: 24px;
+    line-height: 24px;
+    margin: 20px auto;
+    transition: all 1s ease;
+    position: relative;
+    left: -300px;
+    text-decoration: none;
+    color: white;
+}
+.con a:hover{
+    color: aqua;
+}
+
+/* .con p {
+    line-height: 2em;
+    margin-top: 15px;
+    transition: all 1s ease;
+    position: relative;
+    left: -300px;
+}
+
+.con h3 {
+    text-align: center;
+    color: #f2f2f2;
+    margin-bottom: 30px;
+    transition: all 1s ease;
+    position: relative;
+    left: -300px;
+} */
+
+.con:hover span {
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+/* .con:hover h3 {
+    left: 0;
+    top: 0;
+}
+
+.con:hover p {
+    left: 0;
+    top: 0;
+} */
+
+.con:hover a {
+    left: 0;
+    top: 0;
+    text-decoration: none;
+    
+}
+
+
+#connect{
+    padding-top: 50px;
+    background: rgb(0, 50, 78);
+}
+.con-bt{
+   margin-bottom: 50px;
+    text-align: center;
+    position: relative;
+}
+.con-pro span{
+    font-size: 48px;
+    padding: 0px 20px;
+   color: white;
+    display: inline-block;
+
+
+}
+.con-pro span::after{
+    content: "";
+    background: #066093;
+    display: block;
+    width: 200px;
+    height: 5px;
+    right: 40%;
+    position: absolute;
+}
+.formmain{
+    width: 70%;
+    height: 400px;
+    margin: auto;
+    background: white;
+    overflow: hidden;
+}
+.form-title{
+    margin: 20px 40px;
+}
+.form-title h3{
+    float: left;
+    color: #066093;
+    font-size: 1.8em;
+    text-transform: capitalize;
+    font-weight: 300;
+}
+.form-title i{
+    width: 100px;
+    height: 60px;
+    color: #c1cdd4;
+    font-size: 3em;
+    text-transform: capitalize;
+    font-weight: 300;
+}
+.box1{
+    width: 450px;
+    height: 200px;
+    margin-right: 50px;
+    float: left;
+   
+}
+form{
+    margin: 0 30px;
+    
+}
+form input[type=text]{
+    font-size: 1em;
+    border: 1px solid #00339e;
+    background: transparent;
+    outline: none;
+    padding: 1em;
+    width: 100%;
+    margin-bottom: 2em;
+    color: #000;
+}
+form input[type=email]{
+    font-size: 1em;
+    border: 1px solid #00339e;
+    background: transparent;
+    outline: none;
+    padding: 0.7em;
+    width: 100%;
+ 
+    color: #000;
+}
+textarea{
+    font-size: 1em;
+    border: 1px solid #00339e;
+    background: transparent;
+    outline: none;
+    padding: 0.7em;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 2em;
+    color: #000;
+}
+form input[type=submit]{
+    width: 100px;
+    height: 30px;
+    border: 1px solid #00339e;
+    background: transparent;
+    border-radius: 20px;
+    margin: 20px 50px;
+    float: right;
+
+}
+
+.last{
+    height: 200px;
+    margin-top: 80px;
+    
+}
+
+.last-icon{
+    margin-left: 20%;
+    width: 100px;
+    height: 100px;
+   
+    float: left;
+}
+.last-icon i{
+    color: #0b9bee;
+    font-size: 30px;
+    display:inline-block;
+    text-align: center;
+}
+.last-icon span{
+    color: white;
+}
+.last-icon p{
+    margin: 15px 0;
+}
+
+#btn {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    background: rgb(170, 35, 35);
+    color: #fff;
+    right: 25px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 40px;
+    display: none;
+}
+
+#btn:hover {
+    background: #999;
+}
+
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
