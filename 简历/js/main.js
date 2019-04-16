@@ -6,6 +6,9 @@ window.onload = function(){
     var black=$("#black")[0];
     var lisr=$("#fp-nav li");
     var lisra=$("#fp-nav a");
+    var pica=$(".mypic a");
+    var big=$("#big")[0];
+    var img=$("#bigimg")[0];
     for (var i = 0; i< lis.length; i++) {
         lis[i].index = i; 
         lis[i].onclick = function(){
@@ -19,6 +22,22 @@ window.onload = function(){
             con[this.index].className = "cur page";
         }
      };
+    //  var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+     for (var i = 0; i< pica.length; i++) {
+        pica[i].index = i; 
+        pica[i].onclick=function(){
+            var src = this.href;
+            black.style.display="block";
+            big.style.display = "block";
+            big.style.left = "50%";
+            big.style.top =$("#about")[0].offsetTop + 360+"px";
+            big.style.marginLeft = -big.offsetWidth/2 + "px";
+            big.style.marginTop = -big.offsetHeight/2 + "px";
+            img.src = src;
+            return false;
+        }
+     };
+
 
      for (var i = 0; i< lisr.length; i++) {
         lisr[i].index = i; 
@@ -47,10 +66,11 @@ window.onload = function(){
         }
      }
 
-black.onclick = function(){
-black.style.display = "none";
-mypage.style.display = "none";
-}
+    black.onclick = function () {
+        black.style.display = "none";
+        mypage.style.display = "none";
+        big.style.display = "none";
+    }
 
 var btn = document.getElementById("btn");
 var timer = null;
