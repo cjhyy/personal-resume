@@ -257,6 +257,7 @@
     margin: auto;
 }
 #about i{
+    margin-right: 10px;
     font-size: 26px;
     margin-top: 16px;
     color: rgb(155, 149, 149);
@@ -368,13 +369,13 @@ td{
 }
 .myprofile{
     margin: 0 30px;
-    height: 200px;
+    height: 300px;
     border: 1px solid #333;
 }
 .myproject{
     margin: 0 30px;
     height: 200px;
-    border: 1px solid #333;
+   
 }
 #github{
     padding-top: 50px;
