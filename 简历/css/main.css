@@ -71,14 +71,14 @@ body{
     left: 50%;
     top: 50%;
     margin: -2px 0 0 -2px;
-    -webkit-transition: all 0.1s ease-in-out;
+    /* -webkit-transition: all 0.1s ease-in-out;
     -moz-transition: all 0.1s ease-in-out;
-    -o-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out; */
     transition: all 0.1s ease-in-out;
     transform: rotate(135deg);
-    -webkit-transform: : rotate(135deg);
+    /* -webkit-transform: : rotate(135deg);
     -moz-transform: : rotate(135deg);
-    -o-transform: : rotate(135deg);
+    -o-transform: : rotate(135deg); */
 }
 
 #fp-nav ul li a.active span, #fp-nav ul li:hover a span{
@@ -451,9 +451,9 @@ td{
     content: "";
     background: #066093;
     display: block;
-    width: 300px;
+    width: 400px;
     height: 5px;
-    right: 30%;
+    right: 20%;
     position: absolute;
 }
 .gitmain{
@@ -643,6 +643,39 @@ h1{
     
 }
 
+#react{
+  height: 900px;
+}
+.rec-bt{
+    margin-bottom: 50px;
+     text-align: center;
+     position: relative;
+ }
+ .rec-pro span{
+     font-size: 48px;
+     padding: 0px 20px;
+     color: black;
+     display: inline-block;
+ 
+ 
+ }
+ .react-content{
+     width: 95%;
+     margin: auto;
+ }
+ .react-content img{
+  width: 100%;
+  
+ }
+ .rec-pro span::after{
+     content: "";
+     background: #066093;
+     display: block;
+     width: 400px;
+     height: 5px;
+     right: 20%;
+     position: absolute;
+ }
 
 #connect{
     padding-top: 50px;
