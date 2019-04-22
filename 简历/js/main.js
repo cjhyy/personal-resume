@@ -53,13 +53,16 @@ window.onload = function(){
             case 0:
               bb(home);
               break;
-            case 1:
+              case 1:
               bb(about);
               break;
               case 2:
               bb(github);
               break;
               case 3:
+              bb(react);
+              break;
+              case 4:
               bb(connect);
               break;
             }
@@ -113,7 +116,7 @@ window.onscroll = function () {
 
          lisra[1].className="active";
     }
-    if ((scrollTop > $("#github")[0].offsetTop-30)&&(scrollTop< $("#connect")[0].offsetTop)){
+    if ((scrollTop > $("#github")[0].offsetTop-30)&&(scrollTop< $("#react")[0].offsetTop)){
         for( var i=0; i<lisra.length; i++ ){
             lisra[i].className="";
          }
@@ -121,13 +124,21 @@ window.onscroll = function () {
 
          lisra[2].className="active";
     }
-    if (scrollTop > $("#connect")[0].offsetTop-30){
+    if ((scrollTop > $("#react")[0].offsetTop-30)&&(scrollTop< $("#connect")[0].offsetTop)){
         for( var i=0; i<lisra.length; i++ ){
             lisra[i].className="";
          }
          
 
          lisra[3].className="active";
+    }
+    if (scrollTop > $("#connect")[0].offsetTop-30){
+        for( var i=0; i<lisra.length; i++ ){
+            lisra[i].className="";
+         }
+         
+
+         lisra[4].className="active";
     }
 }
 }
