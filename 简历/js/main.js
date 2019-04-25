@@ -63,6 +63,9 @@ window.onload = function(){
               bb(react);
               break;
               case 4:
+              bb(webed);
+              break;
+              case 5:
               bb(connect);
               break;
             }
@@ -124,7 +127,7 @@ window.onscroll = function () {
 
          lisra[2].className="active";
     }
-    if ((scrollTop > $("#react")[0].offsetTop-30)&&(scrollTop< $("#connect")[0].offsetTop)){
+    if ((scrollTop > $("#react")[0].offsetTop-30)&&(scrollTop< $("#webed")[0].offsetTop)){
         for( var i=0; i<lisra.length; i++ ){
             lisra[i].className="";
          }
@@ -132,13 +135,21 @@ window.onscroll = function () {
 
          lisra[3].className="active";
     }
-    if (scrollTop > $("#connect")[0].offsetTop-30){
+    if ((scrollTop > $("#webed")[0].offsetTop-30)&&(scrollTop< $("#connect")[0].offsetTop)){
         for( var i=0; i<lisra.length; i++ ){
             lisra[i].className="";
          }
          
 
          lisra[4].className="active";
+    }
+    if (scrollTop > $("#connect")[0].offsetTop-10){
+        for( var i=0; i<lisra.length; i++ ){
+            lisra[i].className="";
+         }
+         
+
+         lisra[5].className="active";
     }
 }
 }

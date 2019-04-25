@@ -303,7 +303,7 @@ body{
 .aboutmain{
     padding: 0 50px;
     width: 100%;
-    height: 750px;
+    height: 850px;
 }
 .aboutleft{
     padding: 0px 15px;
@@ -361,8 +361,8 @@ body{
 
 .aboutspace{
     width: 5px;
-    height: 100%;
-    margin: 0 50px;
+    height: 90%;
+    margin: 20px 50px;
     background: #dcdcdc;
     float: left;
  
@@ -676,7 +676,82 @@ h1{
      right: 20%;
      position: absolute;
  }
+ #webed{
+     background: rgb(173, 108, 185);
+     padding-top: 50px;
+ }
+ .webed-bt{
+    margin-bottom: 50px;
+    text-align: center;
+    position: relative;
+    color: white;
+ }
 
+.webed-pro span{
+    font-size: 48px;
+    padding: 0px 20px;
+   color: white;
+    display: inline-block;
+
+
+}
+.webed-xbt{
+    color:white;
+}
+.webed-pro span::after{
+    content: "";
+    background: #066093;
+    display: block;
+    width: 400px;
+    height: 5px;
+    right: 20%;
+    position: absolute;
+}
+.web-ht{
+    width: 80%;
+    margin: auto;
+}
+.webed-xbt{
+    text-align: center;
+}
+.webed-content{
+
+}
+.info{
+ margin-left: 10px;
+ color: blanchedalmond;
+ text-align: center;
+}
+.web-main{
+    
+}
+.webed-img img{
+    width: 70%;
+    float: left;
+ 
+}
+.web-ht::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.webed-bt2{
+    margin: 50px auto;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+.webed-qt-hang::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.webed-qt-box{
+    border: 2px solid rgb(107, 107, 107);;
+    width: 20%;
+    margin-left:  2%;
+   margin-top: 20px;
+}
 #connect{
     padding-top: 50px;
     background: rgb(0, 50, 78);
